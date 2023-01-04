@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar color="tertiary">
+        <ion-title>{{workoutName}}</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="dismiss()">Close</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+    <div [innerHTML]="workoutLink" class="videoContainer"></div>
+    <div class="info">
+        Thanks <p (click)="toDarebee()">DAREBEE</p> for videos
+    </div>
+</ion-content>

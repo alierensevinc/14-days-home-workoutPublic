@@ -1,0 +1,18 @@
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.info {
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+
+  p {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "14 Days Home Workout",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

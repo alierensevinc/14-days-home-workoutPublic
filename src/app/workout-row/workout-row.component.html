@@ -1,0 +1,7 @@
+<ion-item color="secondary">
+    <ion-icon (click)="openWorkoutVideo()" color="warning" name="information-circle"></ion-icon>
+    <ion-label>{{workoutCount}} {{workoutName}}</ion-label>
+    <ion-checkbox (ionChange)="doneRep()" [(ngModel)]="checkbox1" color="tertiary" slot="end"></ion-checkbox>
+    <ion-checkbox (ionChange)="doneRep()" [(ngModel)]="checkbox2" color="tertiary" slot="end"></ion-checkbox>
+    <ion-checkbox (ionChange)="doneRep()" [(ngModel)]="checkbox3" color="tertiary" slot="end"></ion-checkbox>
+</ion-item>

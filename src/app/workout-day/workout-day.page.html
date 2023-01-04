@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            Day {{workoutDay}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+    <app-workout-row (allRepsDone)="onRepsDone($event)"
+                     *ngFor="let workout of workouts"
+                     [workoutCount]="workout.count"
+                     [workoutLink]="workout.workout.link"
+                     [workoutName]="workout.workout.name">
+    </app-workout-row>
+    <ion-button (click)="finishWorkout()" [color]="allRepsDone ? 'tertiary' : 'warning'" expand="block">
+        <p [class]="allRepsDone ? 'finishWorkoutButton' : 'finishWorkoutButton notFinished'">Finish The Workout</p>
+    </ion-button>
+    <div class="info">
+        Rest 30 seconds to 2 minutes between sets.
+    </div>
+</ion-content>

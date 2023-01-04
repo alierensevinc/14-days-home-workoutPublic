@@ -1,0 +1,13 @@
+.info {
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.finishWorkoutButton {
+  color: var(--ion-color-warning-tint);
+
+  &.notFinished {
+    color: var(--ion-color-warning-shade);
+  }
+}
